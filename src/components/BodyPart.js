@@ -18,6 +18,8 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         height: "280px",
         cursor: "pointer",
         gap: "47px",
+        display: "flex",
+        justifyContent: "center",
       }}
       onClick={() => {
         setBodyPart(item);
@@ -36,7 +38,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         color="#3a1212"
         textTransform="capitalize"
       >
-        {item} 
+        {item}
       </Typography>
     </Stack>
   );
