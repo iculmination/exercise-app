@@ -2,7 +2,7 @@ export const exerciseOptions = {
   method: "GET",
   headers: {
     "x-rapidapi-host": "exercisedb.p.rapidapi.com",
-    "x-rapidapi-key": process.env.EXERCISE_DB_KEY,
+    "x-rapidapi-key": process.env.REACT_APP_EXERCISE_DB_KEY,
   },
 };
 
