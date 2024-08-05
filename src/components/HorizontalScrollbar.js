@@ -23,23 +23,17 @@ const RightArrow = () => {
 
   return (
     <Typography onClick={() => scrollNext()} className="left-arrow">
-      <img src={RightArrowIcon} alt="right-arrow" />
+      <img src={RightArrowIcon} alt="left-arrow" />
     </Typography>
   );
 };
 
-const HorizontalScrollbar = ({
-  data,
-  bodyParts,
-  setBodyPart,
-  bodyPart,
-  isBodyParts,
-}) => (
+const HorizontalScrollbar = ({ data, setBodyPart, bodyPart, isBodyParts }) => (
   <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
     {data.map((item) => (
       <Box
         key={item.id || item}
-        itemID={item.id || item}
+        itemId={item.id || item}
         title={item.id || item}
         m="0 40px"
       >
@@ -49,7 +43,7 @@ const HorizontalScrollbar = ({
           <ExerciseCard exercise={item} />
         )}
       </Box>
-    ))}s
+    ))}
   </ScrollMenu>
 );
 
